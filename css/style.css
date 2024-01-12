@@ -1,0 +1,87 @@
+body {
+  font-size: 200%;
+  background-color: antiquewhite;
+}
+#top {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  background-color: chocolate;
+  border-radius: 20px;
+  padding: 10px;
+}
+p {
+  display: flex;
+  justify-content: space-around;
+}
+.grid {
+  display: grid;
+  gap: 10px 10px;
+  justify-content: center;
+  text-align: center;
+}
+img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+figure {
+  border: 2px solid black;
+  background-color: floralwhite;
+  padding: 10px;
+  border-radius: 10%;
+}
+footer {
+  text-align: center;
+}
+@media screen and (min-width: 772px) {
+  body {
+    font-size: 150%;
+  }
+  .grid {
+    grid-template-columns: 50% 50%;
+  }
+  #last {
+    grid-column: 1/3;
+  }
+  img {
+    border-radius: 20%;
+    width: 70%;
+    height: 90%;
+  }
+  figure {
+    border-radius: 100px;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    font-size: 125%;
+    scrollbar-width: none;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  .th {
+    grid-column: 1/3;
+  }
+  img {
+    border-radius: 4%;
+    width: 60%;
+    height: 80%;
+  }
+  figure {
+    border-radius: 50px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: aliceblue;
+  }
+  figure {
+    border: 2px solid rgb(42, 27, 1);
+    background-color: rgb(92, 53, 3);
+    padding: 15px;
+  }
+}
+/* AHDK */
